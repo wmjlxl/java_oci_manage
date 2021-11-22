@@ -1,5 +1,5 @@
 
-# <p align="center">oci-manage</p>
+# <p align="center">oci-manage⭐</p>
 <p align="center">暂未开源，介意请勿使用，谢谢✅</P>
 
 ## 免责声明
