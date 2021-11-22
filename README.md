@@ -1,22 +1,6 @@
-目前为公测版本。
-
-一些说明:
-使用前请使用 sudo chmod +x sh_java_oci.sh 进行授权
-脚本默认为当前目录读取jar 也可接自定义jar包路径（如：bash java_oci.sh /root/xxxx/xxx.jar）
-后台运行请执行 screen -S java_oci bash sh_java_oci.sh
-查看后台运行情况 screen -r
-编辑本脚本的 begin 和 end之间的参数进行开机设定（不开机填不填无影响）
-
-两种使用方式:
-1.
-  1）下载压缩包 解压文件 tar -zxvf xxx.tar.gz 
-  2）sudo chmod +x sh_java_oci.sh
-  3）运行 bash sh_java_oci.sh
-2.一键运行（运行完后使用bash java_oci.sh可再次运行）
-  wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/download/first/linux-oci-1.0.0.tar.gz && tar -zxvf linux-oci.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
 
 # <p align="center">oci-manage</p>
-<p align="center">暂未开源，介意请勿使用，谢谢</P>
+<p align="center">暂未开源，介意请勿使用，谢谢✅</P>
 
 ## 免责声明
 - 本仓库发布的oci-manage项目中涉及的任何脚本，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
@@ -54,12 +38,9 @@
 │  README.md            # 说明文档
 ```
 
-#### 一、Linux一键部署
+#### 一、Linux一键部署（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-
 wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/download/first/linux-oci-1.0.0.tar.gz && tar -zxvf linux-oci.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
-
-（运行完后使用bash sh_java_oci.sh可再次运行）
 ```
 
 #### 二、手动安装
@@ -67,8 +48,8 @@ wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/do
   1）下载压缩包 解压文件 tar -zxvf xxx.tar.gz 
   2）sudo chmod +x sh_java_oci.sh
   3）运行 bash sh_java_oci.sh 
-  注：如需后台运行 请执行后台运行请执行 screen -S java_oci bash sh_java_oci.sh
-      查看后台运行情况 screen -r
+  注: screen -S java_oci bash sh_java_oci.sh(后台运行)
+      screen -r java_oci(查看后台运行情况)
 ```
 
 ##### 编辑配置文件
@@ -122,7 +103,7 @@ user=ocid1.user.oc1..aaaaaaaaxxxxgwlg3xuzwgsaazxtzbozqq
 fingerprint=b8:33:6f:xxxx:45:43:33
 tenancy=ocid1.tenancy.oc1..aaaaaaaaxxx7x7h4ya
 region=ap-singapore-1
-key_file=<path to your private keyfile> # TODO
+key_file=<path to your private keyfile> # TODO 正确路径
 ```
 - 将后台生成的 在用户 根目录创建 ~/.oci/config并粘贴进去（请注意 config文件内的私钥位置要正确）
 
