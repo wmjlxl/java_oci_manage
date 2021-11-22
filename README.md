@@ -40,7 +40,7 @@
 
 #### 一、Linux一键部署（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/download/first/linux-oci-1.0.0.tar.gz && tar -zxvf linux-oci.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
+wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/linux-oci.tar.gz && tar -zxvf linux-oci.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
 ```
 
 #### 二、手动安装
