@@ -25,11 +25,11 @@
 * [x] 一键查询和更改ip
 * [x] 修改硬盘性能
 * [x] tg通知
+* [x] 终止实例
+* [x] 开放安全组
 
 ## 正在开发的功能
 * [x] 开机支持更多CPU
-* [x] 终止实例
-* [x] 开放安全组
 * [x] bot操作
 
 
@@ -42,7 +42,7 @@
 
 #### 一、Linux一键部署（运行完后使用bash sh_java_oci.sh可再次运行）
 ```bash
-wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/linux-oci.tar.gz && tar -zxvf linux-oci.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
+sudo rm -rf linux-oci.tar.gz sh_java_oci.sh jar_oci_manage.jar && wget -O linux-oci.tar.gz https://github.com/semicons/java_oci_manage/releases/download/latest/linux-oci.tar.gz && tar -zxvf linux-oci.tar.gz && sudo chmod +x   sh_java_oci.sh && ./sh_java_oci.sh
 ```
 
 #### 二、手动安装
