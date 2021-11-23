@@ -108,6 +108,8 @@ region=ap-singapore-1
 key_file=<path to your private keyfile> # TODO 正确路径
 ```
 - 将后台生成的 在用户 根目录创建 ~/.oci/config并粘贴进去（请注意 config文件内的私钥位置要正确）
+- ![image](https://github.com/semicons/java_oci_manage/blob/main/1637652579448.jpg)
+
 
 
 #### 其他帮助
